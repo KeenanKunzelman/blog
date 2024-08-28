@@ -8,6 +8,7 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 
     for (var i = 0; i < navs.length; ++i) {
       navs[i].style.visibility = "hidden";
+      document.querySelector('main').style.paddingTop = "1rem";
     }
   }else{
     for (var i = 0; i < navs.length; ++i) {
