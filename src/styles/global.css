@@ -140,6 +140,11 @@ main {
         --bg-secondary: #141418;
     }
 
+    .nav-left {
+
+        margin-right: none;
+    }
+
 
     .hamb {
         visibility: visible;
