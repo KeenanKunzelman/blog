@@ -56,15 +56,15 @@ if (small_win_size.matches && navs[0].style.visibility === "visible"){
 
 
 
-//function scrollFunction() {
-//var small_win_size = window.matchMedia("(max-width: 600px")
-//if (small_win_size.matches && navs[0].style.visibility === "visible"){
-//      navs[0].style.visibility = "hidden";
-//      document.querySelector('main').style.paddingTop = "1rem";
-//}
-//
-//    // do your stuff here;
-//}
-//
-//window.onscroll = scrollFunction;
+function scrollFunction() {
+var small_win_size = window.matchMedia("(max-width: 600px")
+if (small_win_size.matches && navs[0].style.visibility === "visible"){
+      navs[0].style.visibility = "hidden";
+      document.querySelector('main').style.paddingTop = "1rem";
+}
+
+    // do your stuff here;
+}
+
+window.onscroll = scrollFunction;
 
