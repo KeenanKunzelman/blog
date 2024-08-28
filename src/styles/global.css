@@ -98,9 +98,13 @@ main {
 
 }
 
+.blog-posts {
+    padding: 0px;
+}
 
 .blog-post {
     list-style: none;
+
 
 }
 
