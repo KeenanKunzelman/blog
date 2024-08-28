@@ -22,21 +22,24 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 
 
 
-  setTimeout(function(){
-  document.querySelector('.fa-bars').classList.toggle('fa-flip');
-  },500);
-
-  document.querySelector('.fa-bars').classList.toggle('fa-flip');
 
 });
 
 
 var navs = document.getElementsByClassName('navbar-nav');
-var win_size = window.matchMedia("(min-width: 601px")
-win_size.addEventListener("change", function() {
-  console.log("lol");
-if (win_size.matches){
+var large_win_size = window.matchMedia("(min-width: 601px")
+large_win_size.addEventListener("change", function() {
+if (large_win_size.matches ){
       navs[0].style.visibility = "visible";
+
+}
+}); 
+
+
+var small_win_size = window.matchMedia("(max-width: 600px")
+small_win_size.addEventListener("change", function() {
+if (small_win_size.matches && navs[0].style.visibility === "visible"){
+      navs[0].style.visibility = "hidden";
 
 }
 }); 

@@ -124,24 +124,25 @@ main {
 }
 
 
-.hamb:active {}
-
-.hamb:focus {}
 
 @media only screen and (max-width:600px) {
+    :root {
+        font-size: 25px;
+        font-family: 'Open Sans';
+        --text-primary: #b6b6b6;
+        --text-secondary: #e6e6e6;
+        --bg-primary: #23232e;
+        --bg-secondary: #141418;
+    }
+
 
     .hamb {
         visibility: visible;
 
-        width: 1rem;
-        height: 1rem%;
-
         margin: .5rem;
     }
 
-    .hamb:active {}
 
-    .hamb:focus {}
 
     .navbar-nav {
         visibility: hidden;
@@ -176,7 +177,4 @@ main {
         text-align: center;
     }
 
-    .nav-item:first-child {}
-
-    .nav-item:last-child {}
 }
