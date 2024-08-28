@@ -1,8 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-const pageTitle = 'Home Page'
+const pageTitle = 'Welcome!'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h2>Who are we and what is this for?</h2>
+    <h4>
+        My friends and I always wanted a place to showcase cool ideas and
+        projects so I took on the challenge of building a site to host the idea.
+    </h4>
+    <p>
+        Each projects subject / goal will vary quite a bit from project to
+        project but I hope they are all interesting to you!
+    </p>
+    <h5>Personal Favorite Projects</h5>
+    <ul>
+        <li>
+            <a href="#">Smugglebus</a>
+        </li>
+    </ul>
+
+    <p>
+        If you'd like to learn more about us head over to the <a href="/about/"
+            >About</a
+        > section of the page
+    </p>
 </BaseLayout>
