@@ -123,6 +123,11 @@ main {
 
 }
 
+.nav-left {
+
+    margin-right: auto;
+}
+
 
 
 @media only screen and (max-width:600px) {
