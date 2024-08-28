@@ -43,3 +43,13 @@ if (small_win_size.matches && navs[0].style.visibility === "visible"){
 
 }
 }); 
+
+
+function scrollFunction() {
+var small_win_size = window.matchMedia("(max-width: 600px")
+      navs[0].style.visibility = "hidden";
+
+    // do your stuff here;
+}
+
+window.onscroll = scrollFunction;
