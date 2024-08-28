@@ -48,13 +48,12 @@ body::-webkit-scrollbar-thumb {
 
 
 main {
-    margin-left: 5rem;
     padding: 1rem;
 }
 
 .navbar {
-    width: 5rem;
-    height: 100vh;
+    width: 100%;
+    height: 2rem;
     position: fixed;
     background-color: var(--bg-primary);
 }
@@ -64,28 +63,26 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     height: 100%
 }
 
 .nav-item {
-    padding: .1rem;
+    padding: .3rem;
 }
 
 
 .nav-item:first-child {
-    padding-top: .3rem;
+    padding-left: .3rem;
 }
 
 .nav-item:last-child {
-    margin-top: auto;
-    padding-bottom: 1rem;
+    margin-left: auto;
+    padding-right: 1rem;
 }
 
 .nav-item:hover {
     background-color: var(--bg-secondary);
-    width: 100%;
     text-align: center;
 }
 
@@ -99,4 +96,21 @@ main {
     text-decoration: none;
     color: #341054;
 
+}
+
+
+.blog-post {
+    list-style: none;
+
+}
+
+.blog-link {
+    text-decoration: none;
+}
+
+
+
+.blog-link:active {
+    text-decoration: none;
+    color: #341054;
 }
