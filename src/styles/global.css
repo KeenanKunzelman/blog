@@ -169,9 +169,6 @@ main {
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr ;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  gap: 2rem;
   }
     .nav-left {
 
