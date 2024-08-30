@@ -3,10 +3,13 @@ import '../styles/global.css'
 import Navigation from '../components/Navigation.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { getCollection } from "astro:content"
+import BlogPost from '../components/BlogPost.astro'
+
 const pageTitle = 'Blog'
 
-import BaseLayout from '../layouts/BaseLayout.astro'
-
+const allPosts = await getCollection("posts");
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -16,22 +19,13 @@ import BaseLayout from '../layouts/BaseLayout.astro'
             This is where we will post any blog posts or blog series for a
             larger more in depth project or idea
         </p>
+
         <ul class="blog-posts">
-            <li class="blog-post">
-                <a class="blog-link" href="/posts/post-1/">post 1</a>
-            </li>
-            <li class="blog-post">
-                <a class="blog-link" href="/posts/post-2/">post 2</a>
-            </li>
-            <li class="blog-post">
-                <a class="blog-link" href="/posts/post-3/">post 3</a>
-            </li>
-            <li class="blog-post">
-                <a class="blog-link" href="/posts/testing/">testing</a>
-            </li>
-            <li class="blog-post">
-                <a class="blog-link" href="/posts/mason/">Mason</a>
-            </li>
+     {
+      allPosts.map((post) =>
+      <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} image_url={post.data.image.url}/>
+      )
+      }
         </ul>
     </div>
 </BaseLayout>
