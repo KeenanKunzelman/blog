@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My testing Blog Post
 author: Keenan Kunzelman
 description: "thingy"

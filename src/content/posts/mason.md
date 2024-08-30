@@ -1,6 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-
 title: 'Mason'
 pubDate: 2024-08-29
 description: 'So my buddy asked if I knew how to arrange rectangles randomly and I thought it would be easy. That was dumb.'
