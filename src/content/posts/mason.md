@@ -19,7 +19,7 @@ Now this is obviously something you can achieve without a clear step by step blu
 ## Day 1
 So today was a boilerplate day. I predominantly spent my time setting up a python environment, thinking about the problem, and creating a **tkinter** screen with a grid.
 
-![grid](/images/grid.png) 
+![grid](/images/grid_code.png) 
 
 Next I created the ability to draw random sizes that mimic the types of paver stones you get.
 
