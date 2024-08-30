@@ -4,6 +4,18 @@ html {
   color: whitesmoke;
 }
 
+body a {
+
+  text-decoration: none;
+  color: #4C1D95;
+}
+
+body a:active {
+
+  text-decoration: none;
+  color: #341054;
+}
+
 .blog {
   color: white;
 }

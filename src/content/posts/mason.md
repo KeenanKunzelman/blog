@@ -87,7 +87,18 @@ if __name__ == "__main__":
 
 
 ```
+# Day 2
+I still have no idea how to solve this problem, but I have some potential algorithms i'd like to try. The first one that comes to mind is fairly rudimentary and may run into issues at the end of the layout generation but we will see.  
 
+### Algo Steps
+1. Randomly choose an unoccupied cell
+2. Randomly choose a stone size from the 3 different available sizes
+3. Attempt to place stone
+	1. Look for collisions & Rule violations
+		1. Do 4 corners meet? GOTO step 1 or 2?
+		2. Does a linear seem span more than 4 units? GOTO step 1 or 2?
+		3. Do any stones overlap? GOTO step 1 or 2?
 
+I think my next step will have to be to write a loop that starts trying to do steps 1 and 2 but with no reguard for the rules first.
 
 
