@@ -5,8 +5,8 @@ description: 'What is CSRF?'
 author: 'Keenan Kunzelman'
 image:
     url: '/images/csrf.jpg'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+    alt: 'The letter C surfing a wave'
+tags: ["Security", "CSRF", "Application Pentesting"]
 
 ---
 

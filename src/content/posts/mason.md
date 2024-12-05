@@ -5,8 +5,8 @@ description: 'So my buddy asked if I knew how to arrange rectangles randomly and
 author: 'Keenan Kunzelman'
 image:
     url: '/images/grid.png'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+    alt: 'An image of asorted pavers'
+tags: ["python", "development"]
 ---
 # The Challenge
 When laying pavers, [like these](http://www.cambridgepavers.com/dfiles/cpdshb2012/cpdshp2012_11_15.pdf) you must follow a couple rules and do your best to create a random layout. These rules are as follows.
