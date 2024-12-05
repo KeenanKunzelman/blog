@@ -1,7 +1,7 @@
 ---
 title: 'CSRF'
 pubDate: 2024-12-05
-description: 'What is CSRF?'
+description: 'How to understand, exploit, and protect against CSRF'
 author: 'Keenan Kunzelman'
 image:
     url: '/images/csrf.jpg'
@@ -11,7 +11,7 @@ tags: ["Security", "CSRF", "Application Pentesting"]
 ---
 
 # Introduction
-In an attempt to get better at exploiting [[CSRF]] and being able to explain it better on potential job interviews i'm going to write this article to both share what I know, and store what I know for reference later.
+In an attempt to get better at exploiting CSRF and being able to explain it better on potential job interviews i'm going to write this article to both share what I know, and store what I know for reference later.
 
 # So What is CSRF?
 It is a class of vulnerability that can impact web applications. Typically the attack looks like the following.
@@ -19,7 +19,7 @@ It is a class of vulnerability that can impact web applications. Typically the a
 	- **A relevant action.** There is an action within the application that the attacker has a reason to induce. This might be a privileged action (such as modifying permissions for other users) or any action on user-specific data (such as changing the user's own password).
 	- **Cookie-based session handling.** Performing the action involves issuing one or more HTTP requests, and the application relies solely on session cookies to identify the user who has made the requests. There is no other mechanism in place for tracking sessions or validating user requests.
 	- **No unpredictable request parameters.** The requests that perform the action do not contain any parameters whose values the attacker cannot determine or guess. For example, when causing a user to change their password, the function is not vulnerable if an attacker needs to know the value of the existing password.
-2. If all these conditions are true an attacker must then [[CSRF Enumeration|enumerate]] the application in question to hopefully discover a [[CSRF Exploitation PoCs|PoC expoit]] and deliver it to the victim
+2. If all these conditions are true an attacker must then enumerate the application in question to hopefully discover a PoC expoit and deliver it to the victim
 	- URL Based PoC
 		- If a web page has incorrectly used GET requests for an endpoint which performs an action which changes the state of an application you can typically deliver the PoC through the use of a URL.
 		- Can be delivered through phising / watering hole style attacks
